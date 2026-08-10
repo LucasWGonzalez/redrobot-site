@@ -1,0 +1,14 @@
+{
+  "name": "redrobot-site",
+  "version": "1.0.0",
+  "description": "Sitio web educativo STEAM DIY",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "astro": "^4.13.0"
+  }
+}
