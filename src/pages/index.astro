@@ -2,61 +2,163 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="Educación STEAM DIY" description="REDRobot: educación digital creativa, libre y colaborativa. Programación, robótica y pensamiento computacional con recursos accesibles.">
-  <section class="hero">
-    <div class="hero-copy">
-      <p class="eyebrow">RED EDUCATIVA DIGITAL · STEAM DIY</p>
-      <h1>Aprendé tecnología<br/><span>haciendo.</span></h1>
-      <p class="hero-lead">Programación, robótica y pensamiento computacional a través de proyectos abiertos, creativos y realizables con recursos accesibles.</p>
-      <div class="hero-actions">
-        <a class="btn btn-primary" href="/proyectos">Explorar proyectos</a>
-        <a class="text-link" href="#que-es">Conocer REDRobot →</a>
+<Layout title="Educación Digital" description="REDRobot: tecnología educativa para aprender haciendo. Talleres, formación docente y proyectos tecnológicos accesibles.">
+  <section class="hero" id="inicio">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">EDUCACIÓN STEAM PARA TODOS LOS NIVELES</p>
+        <h1>Tecnología<br/>educativa para<br/><em>aprender haciendo.</em></h1>
+        <p class="lead"><strong>REDRobot</strong> crea talleres, formación docente y proyectos tecnológicos accesibles para nivel inicial, primario y secundario. Aprender haciendo, con software libre y recursos reutilizables.</p>
+        <div class="actions">
+          <a class="btn primary" href="#propuestas">Quiero conocer las propuestas ↗</a>
+          <a class="text-link" href="#proyecto">Ver qué ofrecemos ↗</a>
+        </div>
+        <div class="micro-tags"><span>Inicial, primario y secundario</span><span>Software libre</span><span>Recursos accesibles</span></div>
       </div>
-      <div class="hero-tags"><span>Software libre</span><span>Hardware accesible</span><span>Aprender haciendo</span></div>
-    </div>
-    <div class="robot-stage" aria-label="Ilustración abstracta de REDRobot">
-      <div class="grid"></div>
-      <div class="robot">
-        <div class="antenna a1"></div><div class="antenna a2"></div>
-        <div class="head"><div class="eye">n</div><div class="eye">n</div></div>
-        <div class="body"><div class="badge">&lt;[n_n]&gt;</div></div>
-        <div class="legs"><span></span><span></span></div>
+      <div class="hero-visual visual-card">
+        <div class="visual-fallback">
+          <div class="red-shape"></div><div class="screen"></div><div class="robot-mini">&lt;[n_n]&gt;</div>
+        </div>
+        <img src="/images/hero.png" alt="Espacio educativo REDRobot con computadora, robot y estudiantes" />
       </div>
-      <div class="code-chip">GPIO</div><div class="code-chip chip2">Python</div><div class="code-chip chip3">DIY</div>
     </div>
   </section>
 
-  <section id="que-es" class="section split">
-    <div><p class="eyebrow">¿QUÉ ES REDROBOT?</p><h2>Una red para crear, probar, equivocarse y compartir.</h2></div>
-    <div><p>REDRobot es una comunidad educativa digital que acerca programación, robótica y pensamiento computacional mediante proyectos prácticos, abiertos y de bajo costo.</p><p>No buscamos enseñar a usar una herramienta cerrada: buscamos que cada persona pueda comprender cómo funciona, modificarla y crear su propia versión.</p></div>
-  </section>
-
-  <section class="section audience">
-    <div class="section-head"><p class="eyebrow">PARA QUIÉN</p><h2>Tecnología con una puerta de entrada clara.</h2></div>
-    <div class="cards">
-      <article><div class="num">01</div><h3>Estudiantes</h3><p>Desafíos breves, resultados visibles y proyectos que se pueden modificar y volver propios.</p><a href="/proyectos">Ver proyectos →</a></article>
-      <article><div class="num">02</div><h3>Docentes</h3><p>Secuencias aplicables, materiales claros, objetivos de aprendizaje y alternativas económicas.</p><a href="/contacto">Consultar →</a></article>
-      <article><div class="num">03</div><h3>Instituciones</h3><p>Propuestas de implementación, talleres y acompañamiento para integrar tecnología con sentido.</p><a href="/contacto">Trabajemos juntos →</a></article>
+  <section class="section soft" id="proyecto">
+    <div class="wrap split">
+      <div>
+        <p class="eyebrow">EL PROYECTO</p>
+        <h2>Tecnología educativa<br/><em>al alcance de todos.</em></h2>
+      </div>
+      <div class="copy">
+        <p><strong>REDRobot</strong> nace de una idea concreta: no hace falta multiplicar equipos, licencias y plataformas para crear experiencias educativas valiosas. Hace falta elegir bien, reutilizar y compartir.</p>
+        <p>Nuestra misión es acercar tecnología, programación y robótica sin barreras económicas ni técnicas. Diseñamos proyectos prácticos, abiertos y replicables para el aula, un espacio comunitario o el hogar.</p>
+      </div>
+    </div>
+    <div class="wrap principles">
+      <article><b>ACCESIBLE</b><p>Bajo costo, cero licencias innecesarias y compatibilidad con recursos existentes.</p></article>
+      <article><b>ABIERTO</b><p>Software libre, conocimiento compartido y libertad para modificar.</p></article>
+      <article><b>REPLICABLE</b><p>Proyectos simples de implementar, adaptar y volver a enseñar.</p></article>
     </div>
   </section>
 
-  <section class="section project-feature">
-    <div class="project-visual">
-      <div class="pi-board"><span>Raspberry Pi</span><div class="ports"></div><div class="chip"></div></div>
+  <section class="section" id="propuestas">
+    <div class="wrap section-head split">
+      <div><p class="eyebrow">ELEGÍ TU PUNTO DE PARTIDA</p><h2>Una propuesta para <em>cada comunidad.</em></h2></div>
+      <p>Experiencias para estudiantes, herramientas para docentes y soluciones digitales para instituciones, con una misma forma de aprender haciendo.</p>
     </div>
-    <div class="project-copy"><p class="eyebrow">PROYECTO DESTACADO</p><h2>Tu propia computadora educativa.</h2><p>Una computadora compacta basada en Raspberry Pi para aprender programación, explorar software libre y construir un entorno de estudio propio.</p><ul><li>Componentes accesibles y reutilizables</li><li>Software libre y recursos gratuitos</li><li>Documentación abierta y replicable</li></ul><a class="btn btn-primary" href="/proyectos">Ver proyecto</a></div>
+    <div class="wrap audience-grid">
+      <article class="audience-card">
+        <div class="photo ph1"><img src="/images/students.png" alt="Estudiantes construyendo un robot REDRobot" /></div>
+        <h3>Estudiantes</h3><p>Talleres y experiencias para descubrir la tecnología de forma activa, creativa y acompañada.</p><a href="#contacto">Quiero saber más ↗</a>
+      </article>
+      <article class="audience-card">
+        <div class="photo ph2"><img src="/images/teachers.png" alt="Docentes planificando una actividad con robótica" /></div>
+        <h3>Docentes</h3><p>Capacitación, recursos y propuestas listas para adaptar a distintos niveles y contextos.</p><a href="#contacto">Quiero saber más ↗</a>
+      </article>
+      <article class="audience-card">
+        <div class="photo ph3"><img src="/images/institutions.png" alt="Institución educativa trabajando con herramientas digitales" /></div>
+        <h3>Instituciones</h3><p>Educación digital, capacitación y mejora de procesos para transformar la experiencia de toda la comunidad educativa.</p><a href="#instituciones">Ver soluciones para institutos ↗</a>
+      </article>
+    </div>
   </section>
 
-  <section class="section principles">
-    <p class="eyebrow">NUESTROS PRINCIPIOS</p><h2>La tecnología se aprende mejor cuando se puede abrir.</h2>
-    <div class="principle-grid"><div><b>01</b><h3>Libre</h3><p>Software y conocimiento que se pueden estudiar, modificar y compartir.</p></div><div><b>02</b><h3>Accesible</h3><p>Hardware económico, reutilización y cero dependencia de licencias premium.</p></div><div><b>03</b><h3>Práctico</h3><p>Aprender haciendo: construir, probar, romper y reconstruir.</p></div><div><b>04</b><h3>Colaborativo</h3><p>La comunidad y el aprendizaje compartido están por encima de la autoría individual.</p></div></div>
+  <section class="section platform" id="plataforma">
+    <div class="wrap platform-top">
+      <div><p class="eyebrow light">LA PLATAFORMA</p><h2>Una Raspberry Pi.<br/><em>Muchos caminos.</em></h2></div>
+      <div class="platform-img visual-card"><div class="visual-fallback pi-fallback">Raspberry Pi</div><img src="/images/pi.png" alt="Raspberry Pi de REDRobot" /></div>
+    </div>
+    <div class="wrap impact-grid">
+      <article><b>IMPACTO</b><h3>Más impacto, menos costo</h3><p>Diseñamos cada propuesta para aprovechar hardware accesible y recursos que la institución ya posee.</p></article>
+      <article><b>COMPATIBILIDAD</b><h3>Si funciona en Raspberry Pi, funciona en más equipos</h3><p>Los proyectos se desarrollan originalmente para ser compatibles con Raspberry Pi y equipos de prestaciones básicas.</p></article>
+      <article><b>APRENDIZAJE</b><h3>Tecnología que se entiende y se reutiliza</h3><p>Priorizamos software libre, herramientas multiplataforma y sólo lo necesario.</p></article>
+    </div>
   </section>
 
-  <section class="section creator">
-    <div class="avatar">LWG</div><div><p class="eyebrow">QUIÉN ESTÁ DETRÁS</p><h2>Lucas Walter González</h2><p>Licenciado en Administración y creador de REDRobot. El proyecto combina educación, tecnología abierta y experimentación práctica con una idea simple: hacer que aprender tecnología sea posible para más personas.</p><a href="/contacto">Contactar →</a></div>
+  <section class="section">
+    <div class="wrap split otto">
+      <div>
+        <p class="eyebrow">OTTO EYES</p>
+        <h2>Un robot para<br/>aprender <em>sin miedo.</em></h2>
+        <p>Otto es la cara visible de REDRobot y también una puerta de entrada a la robótica. Su diseño abierto permite construirlo, programarlo, comprender cómo se mueve y transformarlo en nuevos proyectos.</p>
+        <p>No es un juguete cerrado: es un compañero de aprendizaje que conecta código, electrónica, diseño, creatividad y resolución de problemas.</p>
+      </div>
+      <div class="otto-img visual-card"><div class="visual-fallback robot-fallback">&lt;[n_n]&gt;</div><img src="/images/otto.png" alt="Robot Otto Eyes REDRobot" /></div>
+    </div>
   </section>
+
+  <section class="section institutions" id="instituciones">
+    <div class="wrap split">
+      <div><p class="eyebrow light">PARA INSTITUCIONES EDUCATIVAS</p><h2>Una institución más<br/><em>conectada, ágil y preparada.</em></h2></div>
+      <div><p><strong>REDRobot</strong> no sólo lleva tecnología al aula. Acompaña a institutos educativos a mejorar sus propuestas digitales y a transformar procesos internos con soluciones simples, sostenibles y pensadas para su realidad.</p><p><strong>Mejor experiencia para estudiantes y docentes. Menos carga operativa para la institución.</strong></p></div>
+    </div>
+    <div class="wrap service-grid">
+      <article><h3>Propuesta educativa</h3><p>Diseñamos proyectos, talleres y experiencias tecnológicas que enriquecen la enseñanza.</p></article>
+      <article><h3>Ecosistema Google</h3><p>Integramos Classroom, Drive, Documentos, Formularios y Hojas de cálculo.</p></article>
+      <article><h3>Digitalización y automatización</h3><p>Simplificamos inscripciones, seguimiento, asistencia, comunicaciones y reportes.</p></article>
+    </div>
+  </section>
+
+  <section class="section contact" id="contacto">
+    <div class="wrap contact-grid">
+      <div class="contact-copy">
+        <p class="eyebrow light">CONVERSEMOS</p>
+        <h2>¿Creamos algo<br/><em>juntos?</em></h2>
+        <p>Si sos parte de una institución, docente o familia, contanos qué nivel educativo y qué tipo de experiencia buscás. Te orientamos sin compromiso.</p>
+        <div class="contact-steps"><span>01 · Contanos tu necesidad</span><span>02 · Recibí una orientación</span></div>
+      </div>
+      <form id="contactForm" class="contact-form">
+        <h3>Contanos qué necesitás</h3>
+        <label>Nombre<input required name="nombre" autocomplete="name" placeholder="Tu nombre" /></label>
+        <label>Email<input required type="email" name="email" autocomplete="email" placeholder="tu@email.com" /></label>
+        <label>Soy
+          <select name="perfil" required>
+            <option value="">Elegí una opción</option>
+            <option>Docente</option><option>Institución</option><option>Familia</option><option>Otro</option>
+          </select>
+        </label>
+        <label>¿En qué podemos ayudarte?<textarea required name="mensaje" rows="5" placeholder="Contanos brevemente qué estás buscando"></textarea></label>
+        <button class="btn form-btn" type="submit">Enviar consulta por WhatsApp ↗</button>
+        <p class="form-note">Al enviar, se abre WhatsApp con tu consulta lista para mandar.</p>
+      </form>
+    </div>
+  </section>
+
+  <section class="creator">
+    <div class="wrap creator-grid">
+      <div class="profile-photo"><img src="/images/profile.png" alt="Lic. Lucas Walter González" /></div>
+      <div><p class="eyebrow">CREADOR</p><h3>Lic. Lucas Walter González</h3><p>Creador de REDRobot. Administración, educación y tecnología aplicadas para construir experiencias de aprendizaje accesibles y con impacto.</p></div>
+      <a class="text-link" href="https://www.linkedin.com/" target="_blank" rel="noopener">Ver perfil en LinkedIn ↗</a>
+    </div>
+  </section>
+
+  <script is:inline>
+    const form = document.getElementById('contactForm');
+    form?.addEventListener('submit', (event) => {
+      event.preventDefault();
+      const data = new FormData(form);
+      const nombre = String(data.get('nombre') || '').trim();
+      const email = String(data.get('email') || '').trim();
+      const perfil = String(data.get('perfil') || '').trim();
+      const mensaje = String(data.get('mensaje') || '').trim();
+      const texto = [
+        'Hola REDRobot. Quisiera hacer una consulta.',
+        '',
+        'Nombre: ' + nombre,
+        'Email: ' + email,
+        'Soy: ' + perfil,
+        '',
+        'Consulta: ' + mensaje
+      ].join('\n');
+      const url = 'https://wa.me/5491140488933?text=' + encodeURIComponent(texto);
+      window.open(url, '_blank', 'noopener,noreferrer');
+    });
+  </script>
 
   <style>
-    .hero{display:grid;grid-template-columns:1.08fr .92fr;gap:64px;align-items:center;min-height:650px;padding:36px 0 80px}.eyebrow{font-size:12px;font-weight:700;letter-spacing:.15em;color:var(--color-red);margin-bottom:18px}.hero h1{font-size:72px;letter-spacing:-.04em;line-height:.98;margin-bottom:28px}.hero h1 span{color:var(--color-red)}.hero-lead{font-size:21px;max-width:650px;line-height:1.55}.hero-actions{display:flex;align-items:center;gap:26px;margin:34px 0}.text-link{font-weight:700;color:var(--color-dark)}.hero-tags{display:flex;flex-wrap:wrap;gap:10px}.hero-tags span{border:1px solid #ddd;padding:7px 12px;border-radius:999px;font-size:13px}.robot-stage{position:relative;height:470px;background:var(--color-light);overflow:hidden;border-radius:4px}.grid{position:absolute;inset:0;background-image:linear-gradient(#ddd 1px,transparent 1px),linear-gradient(90deg,#ddd 1px,transparent 1px);background-size:32px 32px;opacity:.35}.robot{position:absolute;left:50%;top:52%;transform:translate(-50%,-50%)}.head{width:180px;height:128px;background:#fff;border:8px solid #434343;border-radius:12px;display:flex;gap:24px;align-items:center;justify-content:center;position:relative;z-index:2}.eye{width:48px;height:48px;border-radius:50%;background:#ff0000;color:#fff;font-family:monospace;font-weight:700;font-size:26px;display:grid;place-items:center}.body{width:150px;height:135px;margin:-2px auto 0;background:#ff0000;border:8px solid #434343;border-radius:8px;display:grid;place-items:center}.badge{font-family:monospace;font-weight:700;color:#fff}.legs{display:flex;justify-content:center;gap:34px}.legs span{width:42px;height:70px;background:#fff;border:8px solid #434343;border-top:0}.antenna{position:absolute;width:8px;height:70px;background:#434343;top:-55px;z-index:1}.antenna:before{content:"";position:absolute;width:22px;height:22px;border-radius:50%;background:#ff0000;left:-7px;top:-8px}.a1{left:35px;transform:rotate(-20deg)}.a2{right:35px;transform:rotate(20deg)}.code-chip{position:absolute;top:70px;left:38px;background:#fff;border:1px solid #ccc;padding:10px 14px;font-family:monospace;font-weight:700}.chip2{left:auto;right:30px;top:165px}.chip3{top:auto;bottom:35px;left:55px}.section{padding:92px 0;border-top:1px solid #e3e3e3}.split{display:grid;grid-template-columns:1fr 1fr;gap:80px}.split h2,.section-head h2,.principles>h2{font-size:46px;letter-spacing:-.025em}.split>div:last-child p{font-size:19px}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:42px}.cards article{border:1px solid #dedede;padding:30px;min-height:290px;display:flex;flex-direction:column}.cards h3{font-size:26px}.cards a{margin-top:auto;font-weight:700}.num{font-family:monospace;color:var(--color-red);font-weight:700;margin-bottom:48px}.project-feature{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}.project-visual{min-height:430px;background:#191919;display:grid;place-items:center}.pi-board{width:280px;height:190px;background:#1d7a4f;border-radius:12px;position:relative;box-shadow:0 25px 50px rgba(0,0,0,.35)}.pi-board span{position:absolute;left:22px;bottom:18px;color:#fff;font-weight:700}.ports{position:absolute;right:-22px;top:35px;width:38px;height:110px;background:repeating-linear-gradient(#bbb 0 22px,#777 22px 27px)}.chip{position:absolute;width:70px;height:70px;background:#222;left:90px;top:55px;border:5px solid #444}.project-copy ul{margin:25px 0 34px;padding-left:20px;color:var(--color-gray)}.project-copy li{margin-bottom:9px}.principle-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:28px;margin-top:50px}.principle-grid>div{border-top:3px solid var(--color-red);padding-top:20px}.principle-grid b{font-family:monospace;color:var(--color-red)}.creator{display:grid;grid-template-columns:140px 1fr;gap:34px;align-items:center}.avatar{width:120px;height:120px;border-radius:50%;background:#434343;color:#fff;display:grid;place-items:center;font-weight:700;font-size:28px}.creator p{max-width:780px}.creator a{font-weight:700}@media(max-width:850px){.hero,.split,.project-feature{grid-template-columns:1fr}.hero{min-height:0;gap:30px}.hero h1{font-size:52px}.robot-stage{height:380px}.cards{grid-template-columns:1fr}.principle-grid{grid-template-columns:1fr 1fr}.creator{grid-template-columns:1fr}.section{padding:64px 0}}@media(max-width:520px){.hero h1{font-size:42px}.hero-actions{align-items:flex-start;flex-direction:column}.principle-grid{grid-template-columns:1fr}.split h2,.section-head h2,.principles>h2{font-size:34px}.robot-stage{height:330px;transform:scale(.95)}}
+    :global(:root){--red:#e62227;--ink:#181818;--paper:#f7f5f0;--line:#dedbd4}
+    :global(body){margin:0;background:#fff;color:var(--ink);font-family:Inter,Arial,sans-serif}
+    .wrap{max-width:1180px;margin:0 auto;padding-left:28px;padding-right:28px}.section{padding:92px 0}.soft{background:var(--paper)}.hero{padding:46px 0 80px}.hero-grid,.split{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}.eyebrow{font-size:11px;letter-spacing:.16em;font-weight:800;text-transform:uppercase;color:var(--red);margin:0 0 18px}.eyebrow:before{content:"";display:inline-block;width:28px;height:2px;background:currentColor;margin-right:10px;vertical-align:middle}.eyebrow.light{color:#fff}.hero h1,.section h2,.contact h2{font-size:clamp(44px,5.5vw,78px);line-height:.94;letter-spacing:-.055em;margin:0 0 26px;font-weight:800}.section h2,.contact h2{font-size:clamp(38px,4vw,58px)}em{font-style:italic;font-weight:400;color:var(--red)}.lead,.copy p,.otto p{font-size:17px;line-height:1.62;color:#57534f}.actions{display:flex;gap:24px;align-items:center;margin-top:30px}.btn{display:inline-flex;align-items:center;justify-content:center;border:0;padding:15px 20px;font-weight:800;text-decoration:none;cursor:pointer}.primary{background:var(--red);color:#fff}.text-link{font-weight:800;color:var(--ink);text-decoration:none}.micro-tags{display:flex;gap:22px;flex-wrap:wrap;margin-top:35px;font-size:11px}.micro-tags span:before{content:"•";color:var(--red);margin-right:7px}.visual-card{position:relative;overflow:hidden;min-height:420px;background:#f0ebe6}.visual-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:2}.visual-fallback{position:absolute;inset:0;display:grid;place-items:center;background:linear-gradient(135deg,#f4ded8,#fff);overflow:hidden}.red-shape{position:absolute;left:0;top:15%;width:40%;height:70%;background:var(--red);clip-path:polygon(0 0,100% 50%,0 100%)}.screen{width:48%;height:38%;background:#222;border:12px solid #111;box-shadow:0 20px 40px #0003}.robot-mini,.robot-fallback{font:800 30px monospace;color:var(--red);z-index:1}.principles{display:grid;grid-template-columns:repeat(3,1fr);margin-top:72px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.principles article{padding:28px 28px 28px 0}.principles article+article{border-left:1px solid var(--line);padding-left:28px}.principles b,.impact-grid b{font-size:10px;letter-spacing:.12em}.principles p,.impact-grid p,.audience-card p,.service-grid p{font-size:14px;line-height:1.55;color:#666}.section-head{align-items:start}.section-head>p{line-height:1.6;color:#666}.audience-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:38px}.audience-card{background:#f4f1eb;padding-bottom:26px}.photo{height:235px;background:linear-gradient(135deg,#d7d1c9,#f4f1eb);position:relative;overflow:hidden}.photo img{width:100%;height:100%;object-fit:cover}.audience-card h3,.audience-card p,.audience-card a{margin-left:22px;margin-right:22px}.audience-card h3{font-size:26px;margin-top:23px;margin-bottom:10px}.audience-card a{display:inline-block;margin-top:12px;color:var(--red);font-size:12px;font-weight:800;text-decoration:none}.platform{background:var(--red);color:#fff}.platform em{color:#fff}.platform-top{display:grid;grid-template-columns:1fr 1.2fr;gap:55px;align-items:center}.platform-img{min-height:390px;background:#7b0d0f}.pi-fallback{background:#a91216;color:#fff;font-weight:800;font-size:34px}.impact-grid,.service-grid{display:grid;grid-template-columns:repeat(3,1fr);margin-top:55px;border-top:1px solid #ffffff44}.impact-grid article{padding:28px 26px 0 0}.impact-grid article+article{border-left:1px solid #ffffff44;padding-left:26px}.impact-grid p{color:#fff}.otto{align-items:start}.otto-img{min-height:440px}.institutions{background:#171717;color:#fff}.institutions em{color:var(--red)}.institutions p{color:#ccc;line-height:1.6}.service-grid article{border-top:2px solid var(--red);padding-top:20px}.service-grid article+article{margin-left:28px}.service-grid p{color:#aaa}.contact{background:var(--red);color:#fff}.contact em{color:#171717}.contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:80px;align-items:start}.contact-copy>p{line-height:1.65}.contact-steps{display:grid;gap:12px;margin-top:32px;font-size:13px}.contact-form{background:#fff;color:var(--ink);padding:34px;display:grid;gap:17px}.contact-form h3{font-size:28px;margin:0 0 4px}.contact-form label{font-size:12px;font-weight:800;display:grid;gap:7px}.contact-form input,.contact-form select,.contact-form textarea{box-sizing:border-box;width:100%;font:inherit;padding:13px 14px;border:1px solid #d8d4cd;background:#faf9f7;color:#1b1b1b;border-radius:0}.contact-form textarea{resize:vertical}.form-btn{background:#171717;color:#fff;width:100%;font-size:14px}.form-note{margin:0;color:#6d6963;font-size:11px;line-height:1.5}.creator{background:var(--paper);padding:30px 0}.creator-grid{display:grid;grid-template-columns:72px 1fr auto;gap:22px;align-items:center}.profile-photo{width:64px;height:64px;border-radius:50%;overflow:hidden;background:#ddd}.profile-photo img{width:100%;height:100%;object-fit:cover}.creator h3{margin:0 0 5px}.creator p{margin:0;font-size:12px;color:#666}.creator .eyebrow{margin-bottom:5px;font-size:9px}
+    @media(max-width:800px){.hero-grid,.split,.platform-top,.contact-grid{grid-template-columns:1fr;gap:35px}.hero{padding-top:30px}.visual-card{min-height:320px}.principles,.audience-grid,.impact-grid,.service-grid{grid-template-columns:1fr}.principles article+article,.impact-grid article+article{border-left:0;border-top:1px solid var(--line);padding-left:0}.impact-grid article+article{border-color:#ffffff44}.audience-card{max-width:560px}.service-grid article+article{margin-left:0}.creator-grid{grid-template-columns:64px 1fr}.creator .text-link{grid-column:2}.actions{align-items:flex-start;flex-direction:column}.section{padding:68px 0}}
   </style>
 </Layout>
