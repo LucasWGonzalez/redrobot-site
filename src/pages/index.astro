@@ -1,113 +1,19 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import '../styles/redrobot-original.css';
 ---
-
-<Layout title="Educación Digital" description="REDRobot: tecnología educativa para aprender haciendo. Talleres, formación docente y proyectos tecnológicos accesibles.">
-  <section class="hero" id="inicio">
-    <div class="wrap hero-grid">
-      <div class="hero-copy">
-        <p class="eyebrow">EDUCACIÓN STEAM PARA TODOS LOS NIVELES</p>
-        <h1>Tecnología<br/>educativa para<br/><em>aprender haciendo.</em></h1>
-        <p class="lead"><strong>REDRobot</strong> crea talleres, formación docente y proyectos tecnológicos accesibles para nivel inicial, primario y secundario. Aprender haciendo, con software libre y recursos reutilizables.</p>
-        <div class="actions">
-          <a class="btn primary" href="#propuestas">Quiero conocer las propuestas ↗</a>
-          <a class="text-link" href="#proyecto">Ver qué ofrecemos ↗</a>
-        </div>
-        <div class="micro-tags"><span>Inicial, primario y secundario</span><span>Software libre</span><span>Recursos accesibles</span></div>
-      </div>
-      <div class="hero-visual visual-card">
-        <div class="visual-fallback">
-          <div class="red-shape"></div><div class="screen"></div><div class="robot-mini">&lt;[n_n]&gt;</div>
-        </div>
-        <img src="/assets/redrobot-hero-v4-optimized.webp" alt="Espacio educativo REDRobot con Otto Eyes, computadora, cuaderno de proyectos y estudiantes construyendo un robot" />
-      </div>
-    </div>
-  </section>
-
-  <section class="section soft" id="proyecto">
-    <div class="wrap split">
-      <div>
-        <p class="eyebrow">EL PROYECTO</p>
-        <h2>Tecnología educativa<br/><em>al alcance de todos.</em></h2>
-      </div>
-      <div class="copy">
-        <p><strong>REDRobot</strong> nace de una idea concreta: no hace falta multiplicar equipos, licencias y plataformas para crear experiencias educativas valiosas. Hace falta elegir bien, reutilizar y compartir.</p>
-        <p>Nuestra misión es acercar tecnología, programación y robótica sin barreras económicas ni técnicas. Diseñamos proyectos prácticos, abiertos y replicables para el aula, un espacio comunitario o el hogar.</p>
-      </div>
-    </div>
-    <div class="wrap principles">
-      <article><b>ACCESIBLE</b><p>Bajo costo, cero licencias innecesarias y compatibilidad con recursos existentes.</p></article>
-      <article><b>ABIERTO</b><p>Software libre, conocimiento compartido y libertad para modificar.</p></article>
-      <article><b>REPLICABLE</b><p>Proyectos simples de implementar, adaptar y volver a enseñar.</p></article>
-    </div>
-  </section>
-
-  <section class="section" id="propuestas">
-    <div class="wrap section-head split">
-      <div><p class="eyebrow">ELEGÍ TU PUNTO DE PARTIDA</p><h2>Una propuesta para <em>cada comunidad.</em></h2></div>
-      <p>Experiencias para estudiantes, herramientas para docentes y soluciones digitales para instituciones, con una misma forma de aprender haciendo.</p>
-    </div>
-    <div class="wrap audience-grid">
-      <article class="audience-card">
-        <div class="photo ph1"><img src="/assets/redrobot-estudiantes.webp" alt="Dos estudiantes programando y construyendo un robot REDRobot" /></div>
-        <h3>Estudiantes</h3><p>Talleres y experiencias para descubrir la tecnología de forma activa, creativa y acompañada.</p><a href="#contacto">Quiero saber más ↗</a>
-      </article>
-      <article class="audience-card">
-        <div class="photo ph2"><img src="/assets/redrobot-docentes.webp" alt="Equipo docente planificando una actividad educativa con robótica" /></div>
-        <h3>Docentes</h3><p>Capacitación, recursos y propuestas listas para adaptar a distintos niveles y contextos.</p><a href="#contacto">Quiero saber más ↗</a>
-      </article>
-      <article class="audience-card">
-        <div class="photo ph3"><img src="/assets/redrobot-instituciones.webp" alt="Equipo de una institución educativa analizando procesos y herramientas digitales" /></div>
-        <h3>Instituciones</h3><p>Educación digital, capacitación y mejora de procesos para transformar la experiencia de toda la comunidad educativa.</p><a href="#instituciones">Ver soluciones para institutos ↗</a>
-      </article>
-    </div>
-  </section>
-
-  <section class="section platform" id="plataforma">
-    <div class="wrap platform-top">
-      <div><p class="eyebrow light">LA PLATAFORMA</p><h2>Una Raspberry Pi.<br/><em>Muchos caminos.</em></h2></div>
-      <div class="platform-img visual-card"><video src="/assets/raspberrypi-v2-optimized.mp4" autoplay muted loop playsinline preload="metadata" aria-label="Raspberry Pi y componentes de REDRobot"></video></div>
-    </div>
-    <div class="wrap impact-grid">
-      <article><b>IMPACTO</b><h3>Más impacto, menos costo</h3><p>Diseñamos cada propuesta para aprovechar hardware accesible y recursos que la institución ya posee.</p></article>
-      <article><b>COMPATIBILIDAD</b><h3>Si funciona en Raspberry Pi, funciona en más equipos</h3><p>Los proyectos se desarrollan originalmente para ser compatibles con Raspberry Pi y equipos de prestaciones básicas.</p></article>
-      <article><b>APRENDIZAJE</b><h3>Tecnología que se entiende y se reutiliza</h3><p>Priorizamos software libre, herramientas multiplataforma y sólo lo necesario.</p></article>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="wrap split otto">
-      <div>
-        <p class="eyebrow">OTTO EYES</p>
-        <h2>Un robot para<br/>aprender <em>sin miedo.</em></h2>
-        <p>Otto es la cara visible de REDRobot y también una puerta de entrada a la robótica. Su diseño abierto permite construirlo, programarlo, comprender cómo se mueve y transformarlo en nuevos proyectos.</p>
-        <p>No es un juguete cerrado: es un compañero de aprendizaje que conecta código, electrónica, diseño, creatividad y resolución de problemas.</p>
-      </div>
-      <div class="otto-img visual-card"><video src="/assets/otto-eyes-ensamblaje-optimized.mp4" autoplay muted loop playsinline preload="metadata" aria-label="Animación de ensamblaje del robot Otto Eyes REDRobot"></video></div>
-    </div>
-  </section>
-
-  <section class="section institutions" id="instituciones">
-    <div class="wrap split">
-      <div><p class="eyebrow light">PARA INSTITUCIONES EDUCATIVAS</p><h2>Una institución más<br/><em>conectada, ágil y preparada.</em></h2></div>
-      <div><p><strong>REDRobot</strong> no sólo lleva tecnología al aula. Acompaña a institutos educativos a mejorar sus propuestas digitales y a transformar procesos internos con soluciones simples, sostenibles y pensadas para su realidad.</p><p><strong>Mejor experiencia para estudiantes y docentes. Menos carga operativa para la institución.</strong></p></div>
-    </div>
-    <div class="wrap service-grid">
-      <article><h3>Propuesta educativa</h3><p>Diseñamos proyectos, talleres y experiencias tecnológicas que enriquecen la enseñanza.</p></article>
-      <article><h3>Ecosistema Google</h3><p>Integramos Classroom, Drive, Documentos, Formularios y Hojas de cálculo.</p></article>
-      <article><h3>Digitalización y automatización</h3><p>Simplificamos inscripciones, seguimiento, asistencia, comunicaciones y reportes.</p></article>
-    </div>
-  </section>
-
-  <section class="section contact" id="contacto">
-    <div class="wrap contact-grid">
-      <div class="contact-copy">
-        <p class="eyebrow light">CONVERSEMOS</p>
-        <h2>¿Creamos algo<br/><em>juntos?</em></h2>
-        <p>Si sos parte de una institución, docente o familia, contanos qué nivel educativo y qué tipo de experiencia buscás. Te orientamos sin compromiso.</p>
-        <div class="contact-steps"><span>01 · Contanos tu necesidad</span><span>02 · Recibí una orientación</span></div>
-      </div>
-      <form id="contactForm" class="contact-form">
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>REDRobot Educación Digital</title>
+  <meta name="description" content="Robótica, programación y pensamiento creativo para estudiantes, docentes e instituciones." />
+  <link rel="icon" href="/assets/favicon-redrobot.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet" />
+</head>
+<body><main><a class="skip-link" href="#contenido">Saltar al contenido</a><header class="site-header"><a class="brand" href="#inicio" aria-label="REDRobot, inicio"><img class="animated-logo" src="/assets/redrobot-logo-animado-claro.webp" alt="REDRobot" width="190" height="38" loading="eager" decoding="async"/></a><nav aria-label="Navegación principal"><a href="#proyecto">Qué es</a><a href="#propuestas">Propuestas</a><a href="#instituciones">Instituciones</a><a href="#plataforma">Plataforma</a></nav><div class="header-actions"><div class="social-links" aria-label="Redes sociales"><a href="https://www.instagram.com/redrobot.educacion/" target="_blank" rel="noreferrer" aria-label="REDRobot en Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4.2"></circle><circle class="social-dot" cx="17.4" cy="6.7" r="1"></circle></svg></a><a href="https://www.facebook.com/redrobot.educacion/" target="_blank" rel="noreferrer" aria-label="REDRobot en Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.2 21v-8h2.7l.4-3.1h-3.1v-2c0-.9.3-1.5 1.6-1.5h1.7V3.6c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.1H8V13h2.8v8h3.4Z"></path></svg></a></div><a class="button button-small" href="https://wa.me/541140488933?text=Hola%2C%20quisiera%20recibir%20informaci%C3%B3n%20sobre%20las%20propuestas%20educativas%20de%20REDRobot." target="_blank" rel="noreferrer">Consultanos <span aria-hidden="true">↗</span></a></div></header><section class="hero" id="inicio" aria-labelledby="contenido"><div class="hero-copy"><p class="eyebrow"><span></span> Educación STEAM para todos los niveles</p><h1 id="contenido">Tecnología educativa para <em>aprender haciendo.</em></h1><p class="hero-intro"><span class="inline-brand" aria-label="REDRobot"><strong>RED</strong><span>Robot</span></span> crea talleres, formación docente y proyectos tecnológicos accesibles para nivel inicial, primario y secundario. Aprender haciendo, con software libre y recursos reutilizables.</p><div class="hero-actions"><a class="button" href="https://wa.me/541140488933?text=Hola%2C%20quisiera%20recibir%20informaci%C3%B3n%20sobre%20las%20propuestas%20educativas%20de%20REDRobot." target="_blank" rel="noreferrer">Quiero conocer las propuestas <span aria-hidden="true">↗</span></a><a class="text-link" href="#propuestas">Ver qué ofrecemos <span aria-hidden="true">↗</span></a></div><ul class="hero-proof" aria-label="Características principales"><li>Inicial, primario y secundario</li><li>Software libre</li><li>Recursos accesibles</li></ul></div><div class="hero-visual"><img src="/assets/redrobot-hero-v4-optimized.webp" srcset="/assets/redrobot-hero-v4-480.webp 480w, /assets/redrobot-hero-v4-768.webp 768w, /assets/redrobot-hero-v4-960.webp 960w, /assets/redrobot-hero-v4-optimized.webp 1254w" sizes="(max-width: 760px) 92vw, (max-width: 1100px) 48vw, 50vw" alt="Espacio educativo REDRobot con Otto Eyes, computadora, cuaderno de proyectos y estudiantes construyendo un robot" width="1254" height="1254" fetchpriority="high" decoding="async"/><p class="visual-note">RASPBERRY PI · SOFTWARE LIBRE · ROBÓTICA ABIERTA</p></div></section><section class="manifesto" id="proyecto"><p class="section-index">El proyecto</p><div class="manifesto-grid"><h2>Tecnología educativa<br/><em>al alcance de todos.</em></h2><div><p><span class="inline-brand" aria-label="REDRobot"><strong>RED</strong><span>Robot</span></span> nace de una idea concreta: no hace falta multiplicar equipos, licencias y plataformas para crear experiencias educativas valiosas. Hace falta elegir bien, reutilizar y compartir.</p><p>Nuestra misión es acercar tecnología, programación y robótica sin barreras económicas ni técnicas. Diseñamos proyectos prácticos, abiertos y replicables para el aula, un espacio comunitario o el hogar.</p></div></div><div class="values"><div><strong>ACCESIBLE</strong><span>Bajo costo, cero licencias innecesarias y compatibilidad con recursos existentes.</span></div><div><strong>ABIERTO</strong><span>Software libre, conocimiento compartido y libertad para modificar.</span></div><div><strong>REPLICABLE</strong><span>Proyectos simples de implementar, adaptar y volver a enseñar.</span></div></div></section><section class="audiences" id="propuestas" aria-labelledby="proposals-title"><div class="audiences-heading"><div><p class="section-index">Elegí tu punto de partida</p><h2 id="proposals-title">Una propuesta para <em>cada comunidad.</em></h2></div><p>Experiencias para estudiantes, herramientas para docentes y soluciones digitales para instituciones, con una misma forma de aprender haciendo.</p></div><div class="audience-grid"><article><img class="audience-image" src="/assets/redrobot-estudiantes.webp" srcset="/assets/redrobot-estudiantes-360.webp 360w, /assets/redrobot-estudiantes-640.webp 640w, /assets/redrobot-estudiantes.webp 1100w" sizes="(max-width: 760px) 92vw, (max-width: 1100px) 44vw, 33vw" alt="Dos estudiantes programando y construyendo un robot REDRobot" width="1100" height="1100" loading="lazy" decoding="async"/><div class="audience-body"><h3>Estudiantes</h3><p>Talleres y experiencias para descubrir la tecnología de forma activa, creativa y acompañada.</p><a href="https://wa.me/541140488933?text=Hola%2C%20soy%20estudiantes%20y%20quisiera%20conocer%20las%20propuestas%20de%20REDRobot." target="_blank" rel="noreferrer">Quiero saber más <span aria-hidden="true">↗</span></a></div></article><article><img class="audience-image" src="/assets/redrobot-docentes.webp" srcset="/assets/redrobot-docentes-360.webp 360w, /assets/redrobot-docentes-640.webp 640w, /assets/redrobot-docentes.webp 1100w" sizes="(max-width: 760px) 92vw, (max-width: 1100px) 44vw, 33vw" alt="Equipo docente planificando una actividad educativa con robótica" width="1100" height="1100" loading="lazy" decoding="async"/><div class="audience-body"><h3>Docentes</h3><p>Capacitación, recursos y propuestas listas para adaptar a distintos niveles y contextos.</p><a href="https://wa.me/541140488933?text=Hola%2C%20soy%20docentes%20y%20quisiera%20conocer%20las%20propuestas%20de%20REDRobot." target="_blank" rel="noreferrer">Quiero saber más <span aria-hidden="true">↗</span></a></div></article><article><img class="audience-image" src="/assets/redrobot-instituciones.webp" srcset="/assets/redrobot-instituciones-360.webp 360w, /assets/redrobot-instituciones-640.webp 640w, /assets/redrobot-instituciones.webp 1100w" sizes="(max-width: 760px) 92vw, (max-width: 1100px) 44vw, 33vw" alt="Equipo de una institución educativa analizando procesos y herramientas digitales" width="1100" height="1100" loading="lazy" decoding="async"/><div class="audience-body"><h3>Instituciones</h3><p>Educación digital, capacitación y mejora de procesos para transformar la experiencia de toda la comunidad educativa.</p><a href="#instituciones">Ver soluciones para institutos <span aria-hidden="true">↗</span></a></div></article></div></section><section class="platform" id="plataforma"><div class="platform-intro"><div><p class="section-index light">La plataforma</p><h2>Una Raspberry Pi.<br/><em>Muchos caminos.</em></h2></div><div class="platform-video-wrap"><div class="lazy-video-shell"><video src="/assets/raspberrypi-v2-optimized.mp4" autoplay muted loop playsinline preload="metadata"></video></div><div class="platform-video-brand" aria-label="REDRobot"><span class="brand-lockup" aria-label="REDRobot, n guion bajo n"><span class="brand-name"><strong>RED</strong><span>Robot</span></span><span class="brand-code"><i>&lt;[</i><span class="brand-code-inner">n_n</span><i>]&gt;</i></span></span></div></div></div><div class="principle-grid"><article><span>IMPACTO</span><h3>Más impacto, menos costo</h3><p>Diseñamos cada propuesta para aprovechar hardware accesible y recursos que la institución ya posee. Así se pueden crear experiencias educativas valiosas sin depender de computadoras nuevas, licencias costosas ni equipamiento exclusivo.</p></article><article><span>COMPATIBILIDAD</span><h3>Si funciona en Raspberry Pi, funciona en más equipos</h3><p>Los proyectos se desarrollan originalmente para ser compatibles con Raspberry Pi. Esa eficiencia permite implementarlos también en computadoras antiguas o de prestaciones básicas, ampliando las posibilidades sin aumentar la inversión.</p></article><article><span>APRENDIZAJE</span><h3>Tecnología que se entiende y se reutiliza</h3><p>Priorizamos software libre, herramientas multiplataforma y sólo lo necesario. Una misma base puede acompañar programación, robótica y proyectos STEAM progresivos, adaptándose a los equipos disponibles en cada comunidad.</p></article></div></section><section class="otto" id="otto"><div class="otto-copy"><p class="section-index">Otto Eyes</p><h2>Un robot para<br/>aprender <em>sin miedo.</em></h2><p>Otto es la cara visible de <span class="inline-brand" aria-label="REDRobot"><strong>RED</strong><span>Robot</span></span> y también una puerta de entrada a la robótica. Su diseño abierto permite construirlo, programarlo, comprender cómo se mueve y transformarlo en nuevos proyectos.</p><p>No es un juguete cerrado: es un compañero de aprendizaje que conecta código, electrónica, diseño, creatividad y resolución de problemas.</p><p>Se construye con piezas impresas en 3D, una placa compatible con Arduino, servomotores, sensores y componentes electrónicos económicos y fáciles de conseguir. Sus conexiones son directas: no requiere soldadura ni experiencia previa. Recomendado desde los 8 años con acompañamiento adulto; a partir de los 12, puede abordarse con mayor autonomía.</p></div><div class="otto-video-wrap"><div class="lazy-video-shell"><video src="/assets/otto-eyes-ensamblaje-optimized.mp4" autoplay muted loop playsinline preload="metadata"></video></div><div class="otto-video-brand" aria-label="REDRobot"><span class="brand-lockup" aria-label="REDRobot, n guion bajo n"><span class="brand-name"><strong>RED</strong><span>Robot</span></span><span class="brand-code"><i>&lt;[</i><span class="brand-code-inner">n_n</span><i>]&gt;</i></span></span></div></div></section><section class="institutions" id="instituciones" aria-labelledby="institutions-title"><div class="institutions-intro"><div><p class="section-index light">Para instituciones educativas</p><h2 id="institutions-title">Una institución más <em>conectada, ágil y preparada.</em></h2></div><div class="institutions-summary"><p><span class="inline-brand inline-brand-inverse" aria-label="REDRobot"><strong>RED</strong><span>Robot</span></span> no sólo lleva tecnología al aula. Acompaña a institutos educativos a mejorar sus propuestas digitales y a transformar procesos internos con soluciones simples, sostenibles y pensadas para su realidad.</p><strong>Mejor experiencia para estudiantes y docentes. Menos carga operativa para la institución.</strong></div></div><div class="institutional-grid"><article><h3>Propuesta educativa</h3><p>Diseñamos proyectos, talleres y experiencias tecnológicas que enriquecen la enseñanza y acercan nuevas herramientas a estudiantes y docentes.</p></article><article><h3>Ecosistema Google</h3><p>Integramos Classroom, Drive, Documentos, Formularios y Hojas de cálculo para organizar contenidos, colaborar y conectar la información del instituto.</p></article><article><h3>Digitalización y automatización</h3><p>Simplificamos inscripciones, seguimiento, asistencia, comunicaciones y reportes para reducir tareas repetitivas y recuperar tiempo de gestión.</p></article></div><div class="institutions-cta"><p>Empezamos por escuchar cómo trabaja hoy tu institución y dónde la tecnología puede generar más valor.</p><a class="button button-white" href="https://wa.me/541140488933?text=Hola%2C%20quisiera%20recibir%20informaci%C3%B3n%20sobre%20las%20propuestas%20educativas%20de%20REDRobot." target="_blank" rel="noreferrer">Conversemos sobre tu instituto <span aria-hidden="true">↗</span></a></div></section><section class="contact contact-with-form" id="contacto"><div><p class="section-index light">Conversemos</p><h2>¿Creamos algo<br/><em>juntos?</em></h2><div class="contact-copy"><p>Si sos parte de una institución, docente o familia, contanos qué nivel educativo y qué tipo de experiencia buscás. Te orientamos sin compromiso.</p><ol class="contact-steps"><li><strong>Contanos tu necesidad</strong><span>Nivel, cantidad de participantes y objetivo.</span></li><li><strong>Recibí una orientación</strong><span>Evaluamos una propuesta posible para tu contexto.</span></li></ol></div></div><form id="contactForm" class="contact-form">
         <h3>Contanos qué necesitás</h3>
         <label>Nombre<input required name="nombre" autocomplete="name" placeholder="Tu nombre" /></label>
         <label>Email<input required type="email" name="email" autocomplete="email" placeholder="tu@email.com" /></label>
@@ -120,19 +26,8 @@ import Layout from '../layouts/Layout.astro';
         <label>¿En qué podemos ayudarte?<textarea required name="mensaje" rows="5" placeholder="Contanos brevemente qué estás buscando"></textarea></label>
         <button class="btn form-btn" type="submit">Enviar consulta por WhatsApp ↗</button>
         <p class="form-note">Al enviar, se abre WhatsApp con tu consulta lista para mandar.</p>
-      </form>
-    </div>
-  </section>
-
-  <section class="creator">
-    <div class="wrap creator-grid">
-      <div class="profile-photo"><img src="/assets/lucas-walter-gonzalez.webp" alt="Lic. Lucas Walter González" /></div>
-      <div><p class="eyebrow">CREADOR</p><h3>Lic. Lucas Walter González</h3><p>Creador de REDRobot. Administración, educación y tecnología aplicadas para construir experiencias de aprendizaje accesibles y con impacto.</p></div>
-      <a class="text-link" href="https://www.linkedin.com/" target="_blank" rel="noopener">Ver perfil en LinkedIn ↗</a>
-    </div>
-  </section>
-
-  <script is:inline>
+      </form></section><section class="creator" id="creador" aria-labelledby="creator-title"><div class="creator-avatar"><img src="/assets/lucas-walter-gonzalez.webp" srcset="/assets/lucas-walter-gonzalez-144.webp 144w, /assets/lucas-walter-gonzalez.webp 288w" sizes="144px" alt="Lic. Lucas Walter González, creador de REDRobot" width="288" height="288" loading="lazy" decoding="async"/></div><div class="creator-copy"><p class="section-index">CREADOR</p><h2 id="creator-title">Lic. Lucas Walter González</h2><p>Creador de <span class="inline-brand" aria-label="REDRobot"><strong>RED</strong><span>Robot</span></span>. Administración, educación y tecnología aplicadas para construir experiencias de aprendizaje accesibles y con impacto.</p></div><a class="creator-link" href="https://www.linkedin.com/in/lucas-walter-gonzalez" target="_blank" rel="noreferrer">Ver perfil en LinkedIn <span aria-hidden="true">↗</span></a></section><footer><a class="brand footer-brand" href="#inicio" aria-label="REDRobot, volver al inicio"><img class="animated-logo animated-logo-inverse" src="/assets/redrobot-logo-animado-oscuro.gif" alt="REDRobot" width="190" height="38" loading="lazy" decoding="async"/></a><p>Educación digital · Buenos Aires, Argentina</p><div class="social-links social-links-footer" aria-label="Redes sociales"><a href="https://www.instagram.com/redrobot.educacion/" target="_blank" rel="noreferrer" aria-label="REDRobot en Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4.2"></circle><circle class="social-dot" cx="17.4" cy="6.7" r="1"></circle></svg></a><a href="https://www.facebook.com/redrobot.educacion/" target="_blank" rel="noreferrer" aria-label="REDRobot en Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.2 21v-8h2.7l.4-3.1h-3.1v-2c0-.9.3-1.5 1.6-1.5h1.7V3.6c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.1H8V13h2.8v8h3.4Z"></path></svg></a></div><p>© 2026 <span class="inline-brand inline-brand-inverse" aria-label="REDRobot"><strong>RED</strong><span>Robot</span></span></p></footer><a class="whatsapp-float" href="https://wa.me/541140488933?text=Hola%2C%20quisiera%20recibir%20informaci%C3%B3n%20sobre%20las%20propuestas%20educativas%20de%20REDRobot." target="_blank" rel="noreferrer" aria-label="Escribinos por WhatsApp" title="Escribinos por WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 3.5A11.8 11.8 0 0 0 12.1 0C5.6 0 .3 5.3.3 11.8c0 2.1.5 4.1 1.6 5.9L.2 24l6.4-1.7a11.8 11.8 0 0 0 5.6 1.4h.1c6.5 0 11.8-5.3 11.8-11.8 0-3.2-1.3-6.2-3.6-8.4Zm-8.3 18.2c-1.7 0-3.5-.5-5-1.4l-.4-.2-3.8 1 1-3.7-.2-.4a9.8 9.8 0 1 1 8.4 4.7Zm5.4-7.3c-.3-.1-1.8-.9-2.1-1-.3-.1-.5-.1-.7.2-.2.3-.8 1-.9 1.2-.2.2-.4.2-.7.1-1.8-.9-3-1.6-4.2-3.6-.3-.6.3-.5.9-1.8.1-.2 0-.4 0-.6l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.2-1.2 2.9s1.2 3.3 1.4 3.5c.2.2 2.4 3.7 5.9 5.2.8.4 1.5.6 2 .7.8.3 1.6.2 2.2.1.7-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4Z"></path></svg></a></main>
+<script is:inline>
     const form = document.getElementById('contactForm');
     form?.addEventListener('submit', (event) => {
       event.preventDefault();
@@ -154,16 +49,5 @@ import Layout from '../layouts/Layout.astro';
       window.open(url, '_blank', 'noopener,noreferrer');
     });
   </script>
-
-  <style>
-    :global(:root){--red:#e62227;--ink:#181818;--paper:#f7f5f0;--line:#dedbd4}
-    :global(body){margin:0;background:#fff;color:var(--ink);font-family:Inter,Arial,sans-serif}
-    .wrap{max-width:1180px;margin:0 auto;padding-left:28px;padding-right:28px}.section{padding:92px 0}.soft{background:var(--paper)}.hero{padding:46px 0 80px}.hero-grid,.split{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}.eyebrow{font-size:11px;letter-spacing:.16em;font-weight:800;text-transform:uppercase;color:var(--red);margin:0 0 18px}.eyebrow:before{content:"";display:inline-block;width:28px;height:2px;background:currentColor;margin-right:10px;vertical-align:middle}.eyebrow.light{color:#fff}.hero h1,.section h2,.contact h2{font-size:clamp(44px,5.5vw,78px);line-height:.94;letter-spacing:-.055em;margin:0 0 26px;font-weight:800}.section h2,.contact h2{font-size:clamp(38px,4vw,58px)}em{font-style:italic;font-weight:400;color:var(--red)}.lead,.copy p,.otto p{font-size:17px;line-height:1.62;color:#57534f}.actions{display:flex;gap:24px;align-items:center;margin-top:30px}.btn{display:inline-flex;align-items:center;justify-content:center;border:0;padding:15px 20px;font-weight:800;text-decoration:none;cursor:pointer}.primary{background:var(--red);color:#fff}.text-link{font-weight:800;color:var(--ink);text-decoration:none}.micro-tags{display:flex;gap:22px;flex-wrap:wrap;margin-top:35px;font-size:11px}.micro-tags span:before{content:"•";color:var(--red);margin-right:7px}.visual-card{position:relative;overflow:hidden;min-height:420px;background:#f0ebe6}.visual-card img,.visual-card video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:2;display:block}.visual-fallback{position:absolute;inset:0;display:grid;place-items:center;background:linear-gradient(135deg,#f4ded8,#fff);overflow:hidden}.red-shape{position:absolute;left:0;top:15%;width:40%;height:70%;background:var(--red);clip-path:polygon(0 0,100% 50%,0 100%)}.screen{width:48%;height:38%;background:#222;border:12px solid #111;box-shadow:0 20px 40px #0003}.robot-mini,.robot-fallback{font:800 30px monospace;color:var(--red);z-index:1}.principles{display:grid;grid-template-columns:repeat(3,1fr);margin-top:72px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.principles article{padding:28px 28px 28px 0}.principles article+article{border-left:1px solid var(--line);padding-left:28px}.principles b,.impact-grid b{font-size:10px;letter-spacing:.12em}.principles p,.impact-grid p,.audience-card p,.service-grid p{font-size:14px;line-height:1.55;color:#666}.section-head{align-items:start}.section-head>p{line-height:1.6;color:#666}.audience-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:38px}.audience-card{background:#f4f1eb;padding-bottom:26px}.photo{height:235px;background:linear-gradient(135deg,#d7d1c9,#f4f1eb);position:relative;overflow:hidden}.photo img{width:100%;height:100%;object-fit:cover}.audience-card h3,.audience-card p,.audience-card a{margin-left:22px;margin-right:22px}.audience-card h3{font-size:26px;margin-top:23px;margin-bottom:10px}.audience-card a{display:inline-block;margin-top:12px;color:var(--red);font-size:12px;font-weight:800;text-decoration:none}.platform{background:var(--red);color:#fff}.platform em{color:#fff}.platform-top{display:grid;grid-template-columns:1fr 1.2fr;gap:55px;align-items:center}.platform-img{min-height:390px;background:#7b0d0f}.pi-fallback{background:#a91216;color:#fff;font-weight:800;font-size:34px}.impact-grid,.service-grid{display:grid;grid-template-columns:repeat(3,1fr);margin-top:55px;border-top:1px solid #ffffff44}.impact-grid article{padding:28px 26px 0 0}.impact-grid article+article{border-left:1px solid #ffffff44;padding-left:26px}.impact-grid p{color:#fff}.otto{align-items:start}.otto-img{min-height:440px}.institutions{background:#171717;color:#fff}.institutions em{color:var(--red)}.institutions p{color:#ccc;line-height:1.6}.service-grid article{border-top:2px solid var(--red);padding-top:20px}.service-grid article+article{margin-left:28px}.service-grid p{color:#aaa}.contact{background:var(--red);color:#fff}.contact em{color:#171717}.contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:80px;align-items:start}.contact-copy>p{line-height:1.65}.contact-steps{display:grid;gap:12px;margin-top:32px;font-size:13px}.contact-form{background:#fff;color:var(--ink);padding:34px;display:grid;gap:17px}.contact-form h3{font-size:28px;margin:0 0 4px}.contact-form label{font-size:12px;font-weight:800;display:grid;gap:7px}.contact-form input,.contact-form select,.contact-form textarea{box-sizing:border-box;width:100%;font:inherit;padding:13px 14px;border:1px solid #d8d4cd;background:#faf9f7;color:#1b1b1b;border-radius:0}.contact-form textarea{resize:vertical}.form-btn{background:#171717;color:#fff;width:100%;font-size:14px}.form-note{margin:0;color:#6d6963;font-size:11px;line-height:1.5}.creator{background:var(--paper);padding:30px 0}.creator-grid{display:grid;grid-template-columns:72px 1fr auto;gap:22px;align-items:center}.profile-photo{width:64px;height:64px;border-radius:50%;overflow:hidden;background:#ddd}.profile-photo img{width:100%;height:100%;object-fit:cover}.creator h3{margin:0 0 5px}.creator p{margin:0;font-size:12px;color:#666}.creator .eyebrow{margin-bottom:5px;font-size:9px}
-    /* Keep legacy global typography from overriding each section's palette. */
-    h1,h2,h3{color:inherit}
-    .platform h2,.platform h3,.institutions h2,.institutions h3,.contact h2{color:#fff}
-    .contact-copy>p{color:#fff}
-    .contact-form h3{color:var(--ink)}
-    @media(max-width:800px){.hero-grid,.split,.platform-top,.contact-grid{grid-template-columns:1fr;gap:35px}.hero{padding-top:30px}.visual-card{min-height:320px}.principles,.audience-grid,.impact-grid,.service-grid{grid-template-columns:1fr}.principles article+article,.impact-grid article+article{border-left:0;border-top:1px solid var(--line);padding-left:0}.impact-grid article+article{border-color:#ffffff44}.audience-card{max-width:560px}.service-grid article+article{margin-left:0}.creator-grid{grid-template-columns:64px 1fr}.creator .text-link{grid-column:2}.actions{align-items:flex-start;flex-direction:column}.section{padding:68px 0}}
-  </style>
-</Layout>
+</body>
+</html>
