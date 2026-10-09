@@ -12,3 +12,24 @@
 .contact-form .form-btn{background:var(--ink);color:#fff;border:0;padding:16px;width:100%;font-size:14px;font-weight:800;cursor:pointer}
 .contact-form .form-note{margin:0;color:var(--muted);font-size:13px;line-height:1.5}
 @media(max-width:560px){.contact-form{padding:24px}}
+
+
+/* Instagram editorial feed */
+.social-proof{background:#f5f4f0;padding:72px 5vw}
+.social-proof[hidden]{display:none}
+.social-proof-heading{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(280px,.55fr);align-items:end;gap:clamp(40px,6vw,88px);margin-bottom:44px}
+.social-proof-heading .section-index{margin-bottom:26px}
+.social-proof-heading h2{max-width:900px;font-size:clamp(42px,5.2vw,76px)}
+.social-proof-intro{max-width:500px;padding-bottom:5px}
+.social-proof-intro p{color:var(--muted);margin:0 0 24px;font-size:18px;line-height:1.65}
+.instagram-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.instagram-card{background:#fff;border:1px solid #d0cec7;min-width:0;overflow:hidden;display:flex;flex-direction:column}
+.instagram-media{aspect-ratio:4/5;background:#e8e7e1;position:relative;overflow:hidden;display:block}
+.instagram-media img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .35s ease}
+.instagram-media:hover img{transform:scale(1.025)}
+.instagram-badge{position:absolute;top:16px;left:16px;background:#171717;color:#fff;padding:8px 10px;letter-spacing:.12em;font-size:10px;font-weight:900}
+.instagram-copy{padding:24px;display:flex;flex-direction:column;flex:1}
+.instagram-copy p{color:var(--muted);margin:0 0 24px;font-size:15px;line-height:1.6}
+.instagram-copy a{color:var(--red);margin-top:auto;font-size:13px;font-weight:800}
+@media(width<=900px){.social-proof{padding:64px 5vw}.social-proof-heading{grid-template-columns:1fr;align-items:start;gap:28px;margin-bottom:36px}.instagram-grid{grid-template-columns:repeat(3,minmax(260px,1fr));overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:10px}.instagram-card{scroll-snap-align:start}}
+@media(width<=560px){.social-proof{padding:54px 22px}.social-proof-heading{gap:22px;margin-bottom:30px}.social-proof-intro p{font-size:16px}.instagram-grid{grid-template-columns:repeat(3,82vw);margin-right:-22px;padding-right:22px}.instagram-copy{padding:20px}}
